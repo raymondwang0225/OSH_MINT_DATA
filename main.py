@@ -31,7 +31,7 @@ OSH_LIST_HOLDERS =pd.read_csv('OSH_LIST_HOLDERS_CSV.csv')
 
 
 
-st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,column_config={
+st.dataframe(OSH_LIST_HOLDERS,height=575,use_container_width =True,column_config={
         "Holding %": st.column_config.ProgressColumn(
             "Holding %",
             width = "small",
