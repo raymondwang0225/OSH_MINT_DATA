@@ -40,7 +40,7 @@ st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,column_config={
             min_value=0,
             max_value=10,
         ),
-        "Rank": st.column_config.ProgressColumn(
+        "Rank": st.column_config.Column(
             "Rank",
             width = "small",
             help="Show rank order",
