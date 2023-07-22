@@ -35,9 +35,14 @@ st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,column_config={
         "Holding %": st.column_config.ProgressColumn(
             "Holding %",
             width = "large",
-            help="The sales volume in USD",
+            help="Show Holding Percentage",
             format=" %f%%",
             min_value=0,
             max_value=10,
+        ),
+        "Rank": st.column_config.ProgressColumn(
+            "Rank",
+            width = "small",
+            help="Show rank order",
         ),
     },hide_index=True,)
