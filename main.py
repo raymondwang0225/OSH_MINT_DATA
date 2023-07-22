@@ -29,4 +29,4 @@ st.title("OSH Holders")
 
 OSH_LIST_HOLDERS =pd.read_csv('OSH_LIST_HOLDERS_CSV.csv')
 
-st.dataframe(OSH_LIST_HOLDERS,hide_index=True,)
+st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,hide_index=True,)
