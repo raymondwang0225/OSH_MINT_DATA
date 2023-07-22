@@ -36,7 +36,7 @@ st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,column_config={
             "Holding %",
             width = "large",
             help="The sales volume in USD",
-            format="%f%%",
+            format=" %f%%",
             min_value=0,
             max_value=10,
         ),
