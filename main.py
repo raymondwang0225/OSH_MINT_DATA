@@ -36,7 +36,7 @@ st.dataframe(OSH_LIST_HOLDERS,height=575,use_container_width =True,column_config
             "Holding %",
             width = "large",
             help="Show Holding Percentage",
-            format=" %f%%",
+            format=" %.4f%%",
             min_value=0,
             max_value=10,
         ),
