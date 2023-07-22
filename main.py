@@ -24,7 +24,7 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.title("OSH Holders")
+st.title("OSH(orc-cash) Holding Data")
 
 
 OSH_LIST_HOLDERS =pd.read_csv('OSH_LIST_HOLDERS_CSV.csv')
