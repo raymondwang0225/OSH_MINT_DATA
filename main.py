@@ -29,4 +29,14 @@ st.title("OSH Holders")
 
 OSH_LIST_HOLDERS =pd.read_csv('OSH_LIST_HOLDERS_CSV.csv')
 
-st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,hide_index=True,)
+column_config={
+        "Holding %": st.column_config.ProgressColumn(
+            "Holding %",
+            help="The sales volume in USD",
+            format="%%",
+            min_value=0,
+            max_value=100,
+        ),
+    },
+
+st.dataframe(OSH_LIST_HOLDERS,use_container_width =True,column_config,hide_index=True,)
